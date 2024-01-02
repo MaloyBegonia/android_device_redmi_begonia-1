@@ -26,6 +26,13 @@ $(call inherit-product, packages/apps/Calculator-IOS/config.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Matrixx
+MATRIXX_BUILD_TYPE := Unofficial
+MATRIXX_MAINTAINER := 🇷🇺<Maloy?/>_🇷🇺
+MATRIXX_CHIPSET := MT6785
+MATRIXX_BATTERY := 4500mAh
+MATRIXX_DISPLAY := 2340 х 1080
+
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
