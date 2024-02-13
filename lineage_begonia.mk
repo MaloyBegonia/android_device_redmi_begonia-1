@@ -22,7 +22,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
 $(call inherit-product, packages/apps/Calculator-IOS/config.mk)
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-$(call inherit-product, packages/apps/Music/config.mk)
+$(call inherit-product, packages/apps/Muzza/config.mk)
 $(call inherit-product-if-exists, vendor/MiuiCameraLeica/config.mk)
 
 # Screen density
