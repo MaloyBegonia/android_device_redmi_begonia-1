@@ -80,5 +80,9 @@
         <item>org.telegram.messenger</item>
         <item>com.microsoft.teams</item>
         <item>com.discord</item>
+        <item>tw.nekomimi.nekogram</item>
+        <item>it.owlgram.android</item>
+        <item>com.radolyn.ayugram</item>
+        <item>uz.unnarsx.cherrygram</item>
     </string-array>    
 </resources>
