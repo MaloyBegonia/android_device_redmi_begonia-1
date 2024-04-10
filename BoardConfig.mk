@@ -146,25 +146,6 @@ ODM_MANIFEST_BEGONIA_FILES := $(DEVICE_PATH)/manifest_begonia.xml
 # VNDK
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
-<<<<<<< HEAD
-# Wifi
-WPA_SUPPLICANT_VERSION := VER_0_8_X
-BOARD_HOSTAPD_DRIVER := NL80211
-WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
-
-=======
->>>>>>> 455a47f (begonia: Build wpa_supplicant from source)
-# Sepolicy
-include device/mediatek/sepolicy/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
-
-# Vibrator
-TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
-
-<<<<<<< HEAD
-=======
 # Wifi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_HOSTAPD_DRIVER := NL80211
@@ -178,6 +159,14 @@ WIFI_DRIVER_STATE_OFF := 0
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
->>>>>>> 455a47f (begonia: Build wpa_supplicant from source)
+# Sepolicy
+include device/mediatek/sepolicy/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
+# Vibrator
+TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
+
 # Inherit from the proprietary version
 include vendor/redmi/begonia/BoardConfigVendor.mk
