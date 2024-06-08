@@ -130,13 +130,18 @@ VENDOR_SECURITY_PATCH := 2022-04-01
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
+# Dolby
+USE_CUSTOM_AUDIO_POLICY := 1
+AUDIO_FEATURE_ENABLED_HW_ACCELERATED_EFFECTS := true
+TARGET_PROVIDES_AUDIO_EXTNS := true
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/aosp/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 ODM_MANIFEST_SKUS += \
     begonia

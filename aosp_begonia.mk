@@ -15,23 +15,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from begonia device
 $(call inherit-product, device/redmi/begonia/device.mk)
 
-# Inherit some common Cherish stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common pe stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 $(call inherit-product-if-exists, vendor/MiuiCameraLeica/config.mk)
+$(call inherit-product-if-exists, hardware/dolby/dolby.mk)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
-
-# Cherish props
-CHERISH_MAINTAINER := @MaloyBegonia
-CHERISH_CHIPSET := MT6785
-CHERISH_BATTERY := 4500mAh
-CHERISH_DISPLAY := 2340х1080
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2340
@@ -40,7 +35,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := cherish_begonia
+PRODUCT_NAME := aosp_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi
